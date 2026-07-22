@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f3f4f6;
+  font-family: 'Poppins', sans-serif;
+  color: #1f2937;
+  overflow: hidden; /* App-like feel */
+}
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+}
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 184, 148);
+}
+
+/* FORCE SHARP CORNERS (RECTANGLES) */
+.sharp-edges, button, input, select, textarea, .card-box {
+  border-radius: 0px !important;
+}
+
+/* Smooth fade for route transitions */
+.page-transition {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
