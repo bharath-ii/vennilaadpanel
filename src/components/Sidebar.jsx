@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Smartphone, Battery, Layers, Monitor, Cpu, User, Grid, Box, Wrench, Users } from 'lucide-react';
+import { Smartphone, Battery, Layers, Monitor, Cpu, User, Grid, Box, Wrench, Users, HelpCircle } from 'lucide-react';
 
 const menuItems = [
   { name: 'Temper', path: '/temper', icon: Monitor },
@@ -14,6 +14,7 @@ const menuItems = [
   { name: 'PC Build', path: '/pc-build', icon: Box },
   { name: 'Mobile Services', path: '/mobile-services', icon: Wrench },
   { name: 'Technicians', path: '/technicians', icon: Users },
+  { name: 'Model Enquiries', path: '/enquiries', icon: HelpCircle },
 ];
 
 const Sidebar = () => {
@@ -23,10 +24,13 @@ const Sidebar = () => {
     <div className="w-64 bg-white h-full flex flex-col border-r border-gray-200 z-10 shadow-lg">
       
       {/* Brand Header */}
-      <div className="h-24 flex items-center justify-center border-b border-gray-100 bg-white">
-        <div className="text-center flex flex-col items-center">
-          <h1 className="text-xl font-black text-[#00b894] uppercase tracking-tighter leading-none">VENNILA ACCESSORIES</h1>
-          <span className="text-[10px] font-bold text-gray-400 tracking-[0.4em] uppercase block">Admin Panel</span>
+      <div className="h-24 flex items-center justify-center border-b border-gray-100 bg-white px-4">
+        <div className="text-center flex items-center gap-3">
+          <img src="/logo_black.png" alt="Find a Part Logo" className="h-10 w-auto object-contain" />
+          <div className="flex flex-col items-start">
+            <h1 className="text-lg font-black text-[#00b894] uppercase tracking-tighter leading-none">FIND A PART</h1>
+            <span className="text-[10px] font-bold text-gray-400 tracking-[0.3em] uppercase block">FAP ADMIN PANEL</span>
+          </div>
         </div>
       </div>
 

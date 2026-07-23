@@ -4,6 +4,7 @@ import Sidebar from './components/Sidebar';
 import ProductManager from './pages/ProductManager';
 import Login from './pages/Login';
 import Technicians from './pages/Technicians';
+import EnquiriesManager from './pages/EnquiriesManager';
 
 // Protected Route Component (Bypassed)
 const ProtectedRoute = ({ children }) => {
@@ -85,6 +86,11 @@ function App() {
         <Route path="/technicians" element={
           <ProtectedRoute>
             <AdminLayout><Technicians /></AdminLayout>
+          </ProtectedRoute>
+        } />
+        <Route path="/enquiries" element={
+          <ProtectedRoute>
+            <AdminLayout><EnquiriesManager /></AdminLayout>
           </ProtectedRoute>
         } />
 

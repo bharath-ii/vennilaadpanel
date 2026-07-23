@@ -32,9 +32,10 @@ const Login = () => {
     return (
         <div className="min-h-screen bg-[#f3f4f6] flex items-center justify-center p-4">
             <div className="bg-white p-8 shadow-xl w-full max-w-md border-t-4 border-[rgb(0, 184, 148)]">
-                <div className="text-center mb-8">
-                    <h1 className="text-3xl font-black text-gray-800 uppercase tracking-tighter">Admin Panel</h1>
-                    <p className="text-gray-500 text-sm font-bold uppercase tracking-widest mt-1">Secure Access</p>
+                <div className="text-center mb-8 flex flex-col items-center">
+                    <img src="/logo_black.png" alt="Find a Part Logo" className="h-16 w-auto object-contain mb-3" />
+                    <h1 className="text-3xl font-black text-gray-800 uppercase tracking-tighter">Find a Part (FAP)</h1>
+                    <p className="text-gray-500 text-sm font-bold uppercase tracking-widest mt-1">Admin Panel Access</p>
                 </div>
 
                 {error && (
