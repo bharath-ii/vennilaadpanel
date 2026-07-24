@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Smartphone, Battery, Layers, Monitor, Cpu, User, Grid, Box, Wrench, Users, HelpCircle } from 'lucide-react';
+import { Smartphone, Battery, Layers, Monitor, Cpu, User, Grid, Box, Wrench, Users, HelpCircle, Bell } from 'lucide-react';
 
 const menuItems = [
   { name: 'Temper', path: '/temper', icon: Monitor },
@@ -15,6 +15,7 @@ const menuItems = [
   { name: 'Mobile Services', path: '/mobile-services', icon: Wrench },
   { name: 'Technicians', path: '/technicians', icon: Users },
   { name: 'Model Enquiries', path: '/enquiries', icon: HelpCircle },
+  { name: 'Notifications', path: '/notifications', icon: Bell },
 ];
 
 const Sidebar = () => {
@@ -69,7 +70,7 @@ const Sidebar = () => {
           </div>
           <div className="overflow-hidden">
             <p className="text-xs font-bold text-gray-900 uppercase truncate">Exceptionz</p>
-            <p className="text-[10px] text-gray-500 truncate">exceptionzofficial@gamil.com</p>
+            <p className="text-[10px] text-gray-500 truncate">asexceptionz13@gmail.com</p>
           </div>
         </div>
       </div>
